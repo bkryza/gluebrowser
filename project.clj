@@ -8,4 +8,4 @@
                  [org.clojars.pntblnk/clj-ldap "0.0.9"]
                  [org.clojure/tools.logging "0.2.6"]
                  [com.unboundid/unboundid-ldapsdk "2.3.5" ]]
-  :main cmdlinetool.core)
+  :main gluebrowser.core)

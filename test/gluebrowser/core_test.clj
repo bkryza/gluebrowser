@@ -30,7 +30,7 @@
   (reset! server (InMemoryDirectoryServer. (ldap-config "Mds-Vo-name=local,o=grid"
                                                         "cn=admin, Mds-Vo-name=local, o=grid"
                                                         "alamakota")))
-  (doto @server  (.importFromLDIF false "./glue-test.ldif") (.startListening)))
+  (doto @server  (.importFromLDIF false "./resources/glue-test.ldif") (.startListening)))
 
 
 (defn teardown
