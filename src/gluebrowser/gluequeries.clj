@@ -19,13 +19,14 @@
 (def glue-queries
   {
     :list-sites '("GlueSite" :GlueSiteUniqueID) ;{:filter "(objectClass=GlueSite)" :attributes [:GlueSiteUniqueID]}
-    :list-clusters TODO
-    :list-subclusters TODO
-    :list-ce TODO
-    :list-software TODO
+    :list-clusters '("GlueClusters" :GlueClusterUniqueID)
+    :list-subclusters '("GlueSubclusters" :GlueSubclusterUniqueID)
+    :list-ce '("GlueCE" :GlueCEUniqueID)
+    :list-software '("GlueSoftware" :GlueSoftware);check
     :list-se '("GlueSE" :GlueSEUniqueID)
-    :list-sa TODO
-    :list-vo TODO
+    :list-sa '("GlueSA" :GlueSAUniqueID)
+    :list-vo '("GlueVO" :GlueVO)
+    :list-services '("GlueServices" :GlueServicesUniqueID)
     }
   )
 
@@ -41,16 +42,16 @@
   [ldap-server query]
   (let [ldap-query (apply str "(objectClass=" (first (query glue-queries)) ")")
         ldap-attribute (second (query glue-queries))]
-        (info "Executing list query: " ldap-query " for attribute " ldap-attribute)
-        (let [result (ldap/search ldap-server ldap-root-dn {:filter ldap-query :attributes [ldap-attribute]})]
-          (map ldap-attribute result))))
+    (info "Executing list query: " ldap-query " for attribute " ldap-attribute)
+    (let [result (ldap/search ldap-server ldap-root-dn {:filter ldap-query :attributes [ldap-attribute]})]
+      (map ldap-attribute result))))
 
 
 
 (defn glue-object-query
   "
   Returns a GLUE object by ID with optionally limited set of attributes. If attrs is nil
-  then it returns a map with all objects attributes returned by LDAP query.
+  then it returns a map with all object's attributes returned by LDAP query.
   "
   [ldap-server id & attrs]
   TODO)
