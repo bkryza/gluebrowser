@@ -25,7 +25,6 @@
   "
   Connects to the ldap server and executes the query on it passing it any argument list
   "
-  "data"
   [connection-data query-fn & args]
   (try
     (let [url (join ":" [(:host connection-data) (:port connection-data)])
@@ -53,13 +52,13 @@
 ; Set of all command line attributes which handle list queries
 ;
 (def list-query-cli-args #{:list-sites
+                           :list-services
                            :list-clusters
                            :list-subclusters
                            :list-ce
                            :list-software
                            :list-se
                            :list-sa
-                           :list-services
                            :list-vo})
 
 
@@ -69,7 +68,7 @@
   This method executes all queries passed on the command line
   "
   [opts]
-  (let [connection-data :host opts :port opts :dn opts :password opts]
+  (let [connection-data {:host opts :port opts :dn opts :password opts}]
     (do
       ;
       ; TODO: loop over all command line query arguments
@@ -77,34 +76,47 @@
       ; DONE: Refactor query-server method so that the connection parameters host, port, dn, password
       ; can be passed in a single dictionary
       ;
+
       (if (:list-sites opts) (query-server connection-data
-                               gluequeries/glue-object-list-query
-                               :list-sites))
-      (if (:list-clusters opts) (query-server connection-data
-                                  gluequeries/glue-object-list-query
-                                  :list-clusters))
-      (if (:list-subclusters opts) (query-server connection-data
-                                     gluequeries/glue-object-list-query
-                                     :list-subclusters))
-      (if (:list-sa opts) (query-server connection-data
                             gluequeries/glue-object-list-query
-                            :list-sa))
+                            :list-sites))
+      (if (:list-services opts) (query-server connection-data
+                            gluequeries/glue-object-list-query
+                            :list-services ))
+      (if (:list-clusters opts) (query-server connection-data
+                            gluequeries/glue-object-list-query
+                            :list-clusters))
+      (if (:list-subclusters opts) (query-server connection-data
+                            gluequeries/glue-object-list-query
+                            :list-subclusters))
       (if (:list-ce opts) (query-server connection-data
                             gluequeries/glue-object-list-query
                             :list-ce))
       (if (:list-software opts) (query-server connection-data
-                                  gluequeries/glue-object-list-query
-                                  :list-software))
+                            gluequeries/glue-object-list-query
+                            :list-software))
       (if (:list-se opts) (query-server connection-data
                             gluequeries/glue-object-list-query
                             :list-se))
+      (if (:list-sa opts) (query-server connection-data
+                            gluequeries/glue-object-list-query
+                            :list-sa))
       (if (:list-vo opts) (query-server connection-data
                             gluequeries/glue-object-list-query
                             :list-vo))
-      (if (:list-services opts) (query-server connection-data
-                                  gluequeries/glue-object-list-query
-                                  :list-services ))
+
+
+
+      ;(loop [available-options list-query-cli-args acc '()]
+      ;  (if ((first available-options) opts)
+      ;    (recur (rest available-options) (cons (query-server connection-data gluequeries/glue-object-list-query (first available-options)) acc))
+      ;    (if (= available-options #[]) (recur (rest available-options) acc)
+      ;       )))
       ;
+
+
+
+
       ; Handle other list-* options
       ;
       ;
@@ -116,18 +128,18 @@
   [& args]
   (let [[opts args banner]
         (cli args
-          ["-h" "--help" "Show help" :flag true :default false];ok
-          ["-s" "--host" "GLUE LDAP host" :default "127.0.0.1"];ok
-          ["-p" "--port" "GLUE LDAP port" :default 389];ok
-          ["-d" "--dn" "Authentication user DN" ];ok
-          ["-w" "--password" "Authentication password"];ok
-          ["-ls" "--list-sites" "List GLUE Sites" :flag true :default false];ok
+          ["-h" "--help" "Show help" :flag true :default false]
+          ["-s" "--host" "GLUE LDAP host" :default "127.0.0.1"]
+          ["-p" "--port" "GLUE LDAP port" :default 389]
+          ["-d" "--dn" "Authentication user DN" ]
+          ["-w" "--password" "Authentication password"]
+          ["-ls" "--list-sites" "List GLUE Sites" :flag true :default false]
           ["-lv" "--list-services" "List GLUE Services" :flag true :default false]
           ["-lc" "--list-clusters" "List GLUE Clusters" :flag true :default false]
           ["-lsc" "--list-subclusters" "List GLUE Subclusters" :flag true :default false]
           ["-lce" "--list-ce" "List GLUE Computing Elements" :flag true :default false]
           ["-lsf" "--list-software" "List GLUE Software" :flag true :default false]
-          ["-lse" "--list-se" "List GLUE Storage Elements" :flag true :default false];ok
+          ["-lse" "--list-se" "List GLUE Storage Elements" :flag true :default false]
           ["-lsa" "--list-sa" "List GLUE Storage Areas" :flag true :default false]
           ["-lvo" "--list-vo" "List GLUE Virtual Organizations" :flag true :default false]
           )]
