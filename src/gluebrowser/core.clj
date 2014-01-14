@@ -25,6 +25,7 @@
   "
   Connects to the ldap server and executes the query on it passing it any argument list
   "
+  ; why & args if there always is only one???
   [connection-data query-fn & args]
   (try
     (let [url (join ":" [(:host connection-data) (:port connection-data)])
@@ -68,7 +69,7 @@
   This method executes all queries passed on the command line
   "
   [opts]
-  (let [connection-data {:host opts :port opts :dn opts :password opts}]
+  (let [connection-data {:host (:host opts) :port (:port opts) :dn (:dn opts) :password (:password opts)}]
     (do
       ;
       ; TODO: loop over all command line query arguments
