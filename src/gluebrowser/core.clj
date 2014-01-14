@@ -108,12 +108,13 @@
 
 
 
-      ;(loop [available-options list-query-cli-args acc '()]
-      ;  (if ((first available-options) opts)
-      ;    (recur (rest available-options) (cons (query-server connection-data gluequeries/glue-object-list-query (first available-options)) acc))
-      ;    (if (= available-options #[]) (recur (rest available-options) acc)
-      ;       )))
-      ;
+      (loop [available-options list-query-cli-args acc '()]
+        (if (= (count available-options) 0)
+          acc
+          (if ((first available-options) opts)
+            (recur (rest available-options) (cons (query-server connection-data gluequeries/glue-object-list-query (first available-options)) acc))
+            (recur (rest available-options) acc)))
+
 
 
 
