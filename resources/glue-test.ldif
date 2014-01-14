@@ -1,0 +1,1983 @@
+dn: Mds-Vo-name=local,o=grid
+Mds-Vo-name: local
+objectClass: Mds
+
+dn: Mds-Vo-name=wt2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: wt2
+objectClass: Mds
+
+dn: Mds-Vo-name=FZJ,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: FZJ
+
+dn: Mds-Vo-name=WUT,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: WUT
+
+dn: Mds-Vo-name=CSC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CSC
+Mds-validfrom: 20131120104950Z
+Mds-validto: 20131120114950Z
+
+dn: Mds-Vo-name=ucd,Mds-Vo-name=local,o=grid
+Mds-Vo-name: ucd
+objectClass: Mds
+
+dn: Mds-Vo-name=pic,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: pic
+
+dn: Mds-Vo-name=CBPF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CBPF
+
+dn: Mds-Vo-name=ifae,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ifae
+
+dn: Mds-Vo-name=BIFI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BIFI
+
+dn: Mds-Vo-name=CRS4,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CRS4
+
+dn: Mds-Vo-name=glow,Mds-Vo-name=local,o=grid
+Mds-Vo-name: glow
+objectClass: Mds
+
+dn: Mds-Vo-name=TASK,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TASK
+
+dn: Mds-Vo-name=ITWM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ITWM
+
+dn: Mds-Vo-name=GRIF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRIF
+
+dn: Mds-Vo-name=mwt2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: mwt2
+objectClass: Mds
+
+dn: Mds-Vo-name=SCAI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: SCAI
+
+dn: Mds-Vo-name=ITEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ITEP
+
+dn: Mds-Vo-name=BCBR,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BCBR
+
+dn: Mds-Vo-name=PSNC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: PSNC
+
+dn: Mds-Vo-name=M3PEC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: M3PEC
+
+dn: Mds-Vo-name=SAMPA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: SAMPA
+
+dn: Mds-Vo-name=OBSPM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: OBSPM
+
+dn: Mds-Vo-name=EENet,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: EENet
+
+dn: Mds-Vo-name=fiupg,Mds-Vo-name=local,o=grid
+Mds-Vo-name: fiupg
+objectClass: Mds
+
+dn: Mds-Vo-name=IEETA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IEETA
+
+dn: Mds-Vo-name=ARNES,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ARNES
+
+dn: Mds-Vo-name=CESGA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CESGA
+
+dn: Mds-Vo-name=aglt2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: aglt2
+objectClass: Mds
+
+dn: Mds-Vo-name=MPPMU,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MPPMU
+
+dn: Mds-Vo-name=renci,Mds-Vo-name=local,o=grid
+Mds-Vo-name: renci
+objectClass: Mds
+
+dn: Mds-Vo-name=RRC-KI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RRC-KI
+
+dn: Mds-Vo-name=UA-KNU,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA-KNU
+
+dn: Mds-Vo-name=LSG-VU,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-VU
+
+dn: Mds-Vo-name=UNICAN,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNICAN
+
+dn: Mds-Vo-name=RTUETF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RTUETF
+
+dn: Mds-Vo-name=UPorto,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UPorto
+
+dn: Mds-Vo-name=SiGNET,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: SiGNET
+
+dn: Mds-Vo-name=TW-FTT,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: tw-ftt
+
+dn: Mds-Vo-name=IMCSUL,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IMCSUL
+
+dn: Mds-Vo-name=sprace,Mds-Vo-name=local,o=grid
+Mds-Vo-name: sprace
+objectClass: Mds
+
+dn: Mds-Vo-name=CIRMMP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CIRMMP
+
+dn: Mds-Vo-name=SZTAKI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: SZTAKI
+
+dn: Mds-Vo-name=UA-MHI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA-MHI
+
+dn: Mds-Vo-name=vt_osg,Mds-Vo-name=local,o=grid
+Mds-Vo-name: vt_osg
+objectClass: Mds
+
+dn: Mds-Vo-name=ucsdt2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: ucsdt2
+objectClass: Mds
+
+dn: Mds-Vo-name=WCSS64,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: WCSS64
+
+dn: Mds-Vo-name=AREA-BO,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AREA-BO
+
+dn: Mds-Vo-name=NDGF-T1,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: NDGF-T1
+
+dn: Mds-Vo-name=umn-cms,Mds-Vo-name=local,o=grid
+Mds-Vo-name: umn-cms
+objectClass: Mds
+
+dn: Mds-Vo-name=UA-BITP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA-BITP
+
+dn: Mds-Vo-name=fsu-hep,Mds-Vo-name=local,o=grid
+Mds-Vo-name: fsu-hep
+objectClass: Mds
+
+dn: Mds-Vo-name=LSG-EMC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-EMC
+
+dn: Mds-Vo-name=BMEGrid,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BMEGrid
+
+dn: Mds-Vo-name=mit_cms,Mds-Vo-name=local,o=grid
+Mds-Vo-name: mit_cms
+objectClass: Mds
+
+dn: Mds-Vo-name=INAF-TS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INAF-TS
+
+dn: Mds-Vo-name=GoeGrid,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GoeGrid
+
+dn: Mds-Vo-name=LSG-RUG,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-RUG
+
+dn: Mds-Vo-name=RedIRIS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RedIRIS
+
+dn: Mds-Vo-name=DESY-HH,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: DESY-HH
+
+dn: Mds-Vo-name=UB-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UB-LCG2
+
+dn: Mds-Vo-name=PK-CIIT,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: PK-CIIT
+
+dn: Mds-Vo-name=LSG-HUB,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-HUB
+
+dn: Mds-Vo-name=LSG-TUD,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-TUD
+
+dn: Mds-Vo-name=LSG-WUR,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-WUR
+
+dn: Mds-Vo-name=LSG-NKI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-NKI
+
+dn: Mds-Vo-name=LRZ-LMU,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LRZ-LMU
+
+dn: Mds-Vo-name=DESY-ZN,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: DESY-ZN
+
+dn: Mds-Vo-name=ucr-hep,Mds-Vo-name=local,o=grid
+Mds-Vo-name: ucr-hep
+objectClass: Mds
+
+dn: Mds-Vo-name=RUG-CIT,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RUG-CIT
+
+dn: Mds-Vo-name=LSG-AMC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-AMC
+
+dn: Mds-Vo-name=LSG-KUN,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-KUN
+
+dn: Mds-Vo-name=CFP-IST,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CFP-IST
+
+dn: Mds-Vo-name=cit_hep,Mds-Vo-name=local,o=grid
+Mds-Vo-name: cit_hep
+objectClass: Mds
+
+dn: Mds-Vo-name=JINR-T1,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: JINR-T1
+
+dn: Mds-Vo-name=umd-cms,Mds-Vo-name=local,o=grid
+Mds-Vo-name: umd-cms
+objectClass: Mds
+
+dn: Mds-Vo-name=LSG-AMS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-AMS
+
+dn: Mds-Vo-name=ru-PNPI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ru-PNPI
+
+dn: Mds-Vo-name=UA-ISMA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA-ISMA
+
+dn: Mds-Vo-name=IL_COMP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IL_COMP
+
+dn: Mds-Vo-name=LCG_KNU,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LCG_KNU
+
+dn: Mds-Vo-name=MaiGRID,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MaiGRID
+
+dn: Mds-Vo-name=INFN-T1,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-T1
+
+dn: Mds-Vo-name=BG01-IPP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BG01-IPP
+
+dn: Mds-Vo-name=ESA-ESAC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ESA-ESAC
+
+dn: Mds-Vo-name=SNS-PISA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: SNS-PISA
+
+dn: Mds-Vo-name=BUDAPEST,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BUDAPEST
+
+dn: Mds-Vo-name=UNI-BONN,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNI-BONN
+
+dn: Mds-Vo-name=NCP-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: NCP-LCG2
+
+dn: Mds-Vo-name=EFDA-JET,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: EFDA-JET
+
+dn: Mds-Vo-name=UNIBE-ID,Mds-Vo-name=local,o=grid
+Mds-Vo-name: UNIBE-ID
+objectClass: Mds
+Mds-validfrom: 20131120104909Z
+Mds-validto: 20131120114909Z
+
+dn: Mds-Vo-name=USC-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: USC-LCG2
+
+dn: Mds-Vo-name=INFN-MIB,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-MIB
+
+dn: Mds-Vo-name=WCSS-PPS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: WCSS-PPS
+
+dn: Mds-Vo-name=swt2_cpb,Mds-Vo-name=local,o=grid
+Mds-Vo-name: swt2_cpb
+objectClass: Mds
+
+dn: Mds-Vo-name=RAL-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RAL-LCG2
+Mds-validfrom: 20131120104422Z
+Mds-validto: 20131120114422Z
+
+dn: Mds-Vo-name=UNIANDES,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNIANDES
+
+dn: Mds-Vo-name=FZK-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: FZK-LCG2
+
+dn: Mds-Vo-name=SFU-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: SFU-LCG2
+
+dn: Mds-Vo-name=LSG-LUMC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LSG-LUMC
+
+dn: Mds-Vo-name=uta_swt2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: uta_swt2
+objectClass: Mds
+
+dn: Mds-Vo-name=UA-PIMEE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA-PIMEE
+Mds-validfrom: 20131120104906Z
+Mds-validto: 20131120114906Z
+
+dn: Mds-Vo-name=uprm-cms,Mds-Vo-name=local,o=grid
+Mds-Vo-name: uprm-cms
+objectClass: Mds
+
+dn: Mds-Vo-name=ICN-UNAM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ICN-UNAM
+
+dn: Mds-Vo-name=nebraska,Mds-Vo-name=local,o=grid
+Mds-Vo-name: nebraska
+objectClass: Mds
+
+dn: Mds-Vo-name=umisshep,Mds-Vo-name=local,o=grid
+Mds-Vo-name: umisshep
+objectClass: Mds
+
+dn: Mds-Vo-name=UAM-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UAM-LCG2
+
+dn: Mds-Vo-name=IN2P3-CC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-CC
+
+dn: Mds-Vo-name=EELA-UNLP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: EELA-UNLP
+
+dn: Mds-Vo-name=ouhep_osg,Mds-Vo-name=local,o=grid
+Mds-Vo-name: ouhep_osg
+objectClass: Mds
+
+dn: Mds-Vo-name=JINR-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: JINR-LCG2
+
+dn: Mds-Vo-name=GR-09-UoA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GR-09-UoA
+
+dn: Mds-Vo-name=INFN-BARI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-BARI
+
+dn: Mds-Vo-name=TU-Kosice,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TU-Kosice
+
+dn: Mds-Vo-name=T3_CH_PSI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: T3_CH_PSI
+
+dn: Mds-Vo-name=HG-06-EKT,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HG-06-EKT
+
+dn: Mds-Vo-name=brown-cms,Mds-Vo-name=local,o=grid
+Mds-Vo-name: brown-cms
+objectClass: Mds
+
+dn: Mds-Vo-name=BG03-NGCC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BG03-NGCC
+
+dn: Mds-Vo-name=GR-10-UOI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GR-10-UOI
+
+dn: Mds-Vo-name=UA-NSCMBR,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA-NSCMBR
+Mds-validfrom: 20131120104752Z
+Mds-validto: 20131120114752Z
+
+dn: Mds-Vo-name=MSFG-OPEN,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MSFG-OPEN
+
+dn: Mds-Vo-name=mainzgrid,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: mainzgrid
+
+dn: Mds-Vo-name=cinvestav,Mds-Vo-name=local,o=grid
+Mds-Vo-name: cinvestav
+objectClass: Mds
+
+dn: Mds-Vo-name=AUVERGRID,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AUVERGRID
+
+dn: Mds-Vo-name=CETA-GRID,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CETA-GRID
+
+dn: Mds-Vo-name=CERN-PROD,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CERN-PROD
+
+dn: Mds-Vo-name=IFCA-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IFCA-LCG2
+
+dn: Mds-Vo-name=bnl-atlas,Mds-Vo-name=local,o=grid
+Mds-Vo-name: bnl-atlas
+objectClass: Mds
+
+dn: Mds-Vo-name=KR-KNU-T3,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: KR-KNU-T3
+
+dn: Mds-Vo-name=ZA-MERAKA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ZA-MERAKA
+
+dn: Mds-Vo-name=RO-01-ICI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RO-01-ICI
+
+dn: Mds-Vo-name=IN2P3-LPC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-LPC
+
+dn: Mds-Vo-name=IFIC-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IFIC-LCG2
+
+dn: Mds-Vo-name=MD-02-IMI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MD-02-IMI
+
+dn: Mds-Vo-name=RRC-KI-T1,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RRC-KI-T1
+
+dn: Mds-Vo-name=FI_HIP_T2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: FI_HIP_T2
+
+dn: Mds-Vo-name=CSCS-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CSCS-LCG2
+
+dn: Mds-Vo-name=INFN-LNL-2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-LNL-2
+
+dn: Mds-Vo-name=RO-09-UTCN,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RO-09-UTCN
+
+dn: Mds-Vo-name=IN2P3-LPSC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-LPSC
+
+dn: Mds-Vo-name=HG-02-IASA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HG-02-IASA
+
+dn: Mds-Vo-name=TR-03-METU,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TR-03-METU
+
+dn: Mds-Vo-name=aglt2_test,Mds-Vo-name=local,o=grid
+Mds-Vo-name: aglt2_test
+objectClass: Mds
+
+dn: Mds-Vo-name=GR-06-IASA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GR-06-IASA
+
+dn: Mds-Vo-name=LIP-Lisbon,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LIP-Lisbon
+
+dn: Mds-Vo-name=INFN-ROMA3,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-ROMA3
+
+dn: Mds-Vo-name=RO-14-ITIM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RO-14-ITIM
+
+dn: Mds-Vo-name=cit_cms_t2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: cit_cms_t2
+objectClass: Mds
+
+dn: Mds-Vo-name=TOKYO-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TOKYO-LCG2
+
+dn: Mds-Vo-name=IL-TAU-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IL-TAU-HEP
+
+dn: Mds-Vo-name=T2_Estonia,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: T2_Estonia
+
+dn: Mds-Vo-name=TW-EMI-PPS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TW-EMI-PPS
+
+dn: Mds-Vo-name=HEPHY-UIBK,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HEPHY-UIBK
+
+dn: Mds-Vo-name=IN2P3-IPNL,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-IPNL
+
+dn: Mds-Vo-name=RO-16-UAIC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RO-16-UAIC
+
+dn: Mds-Vo-name=bnl_test_2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: bnl_test_2
+objectClass: Mds
+
+dn: Mds-Vo-name=AEGIS04-KG,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AEGIS04-KG
+
+dn: Mds-Vo-name=IFISC-GRID,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IFISC-GRID
+
+dn: Mds-Vo-name=UPV-GRyCAP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UPV-GRyCAP
+
+dn: Mds-Vo-name=EELA-UTFSM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: EELA-UTFSM
+
+dn: Mds-Vo-name=INFN-PAVIA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-PAVIA
+
+dn: Mds-Vo-name=IN2P3-LAPP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-LAPP
+
+dn: Mds-Vo-name=UNINA-EGEE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNINA-EGEE
+
+dn: Mds-Vo-name=UNIBE-LHEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNIBE-LHEP
+
+dn: Mds-Vo-name=praguelcg2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: praguelcg2
+
+dn: Mds-Vo-name=TW-NTU-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TW-NTU-HEP
+
+dn: Mds-Vo-name=UNIV-LILLE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNIV-LILLE
+
+dn: Mds-Vo-name=INFN-ROMA1,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-ROMA1
+
+dn: Mds-Vo-name=INFN-PARMA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-PARMA
+
+dn: Mds-Vo-name=IN2P3-CPPM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-CPPM
+
+dn: Mds-Vo-name=HG-03-AUTH,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HG-03-AUTH
+
+dn: Mds-Vo-name=AM-02-SEUA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AM-02-SEUA
+
+dn: Mds-Vo-name=SE-SNIC-T2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: SE-SNIC-T2
+
+dn: Mds-Vo-name=vanderbilt,Mds-Vo-name=local,o=grid
+Mds-Vo-name: vanderbilt
+objectClass: Mds
+
+dn: Mds-Vo-name=mit_cms_t3,Mds-Vo-name=local,o=grid
+Mds-Vo-name: mit_cms_t3
+objectClass: Mds
+
+dn: Mds-Vo-name=IN2P3-IRES,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-IRES
+
+dn: Mds-Vo-name=IL_IUCC_IG,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IL_IUCC_IG
+
+dn: Mds-Vo-name=CIEMAT-TIC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CIEMAT-TIC
+
+dn: Mds-Vo-name=INFN-LECCE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-LECCE
+
+dn: Mds-Vo-name=GR-01-AUTH,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GR-01-AUTH
+
+dn: Mds-Vo-name=egee.irb.hr,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: egee.irb.hr
+
+dn: Mds-Vo-name=GRISU-UNINA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRISU-UNINA
+
+dn: Mds-Vo-name=MY-UTM-GRID,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MY-UTM-GRID
+
+dn: Mds-Vo-name=MD-04-RENAM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MD-04-RENAM
+
+dn: Mds-Vo-name=bnl_atlas_1,Mds-Vo-name=local,o=grid
+Mds-Vo-name: bnl_atlas_1
+objectClass: Mds
+
+dn: Mds-Vo-name=GE-01-GRENA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GE-01-GRENA
+
+dn: Mds-Vo-name=RO-02-NIPNE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RO-02-NIPNE
+
+dn: Mds-Vo-name=INFN-PADOVA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-PADOVA
+
+dn: Mds-Vo-name=BG05-SUGrid,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BG05-SUGrid
+
+dn: Mds-Vo-name=TRIUMF-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TRIUMF-LCG2
+
+dn: Mds-Vo-name=illinoishep,Mds-Vo-name=local,o=grid
+Mds-Vo-name: illinoishep
+objectClass: Mds
+
+dn: Mds-Vo-name=IGI-BOLOGNA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IGI-BOLOGNA
+
+dn: Mds-Vo-name=Taiwan-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: Taiwan-LCG2
+
+dn: Mds-Vo-name=BelGrid-UCL,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BelGrid-UCL
+
+dn: Mds-Vo-name=INFN-GENOVA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-GENOVA
+
+dn: Mds-Vo-name=UNI-PERUGIA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNI-PERUGIA
+
+dn: Mds-Vo-name=nwicg_earth,Mds-Vo-name=local,o=grid
+Mds-Vo-name: nwicg_earth
+objectClass: Mds
+
+dn: Mds-Vo-name=IN2P3-CC-T2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-CC-T2
+
+dn: Mds-Vo-name=TW-eScience,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TW-eScience
+
+dn: Mds-Vo-name=FMPhI-UNIBA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: FMPhI-UNIBA
+
+dn: Mds-Vo-name=RWTH-Aachen,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RWTH-Aachen
+
+dn: Mds-Vo-name=HG-01-GRNET,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HG-01-GRNET
+
+dn: Mds-Vo-name=LIP-Coimbra,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: LIP-Coimbra
+
+dn: Mds-Vo-name=MREN-01-CIS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MREN-01-CIS
+
+dn: Mds-Vo-name=BA-01-ETFBL,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BA-01-ETFBL
+
+dn: Mds-Vo-name=GARR-01-DIR,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GARR-01-DIR
+
+dn: Mds-Vo-name=VU-MIF-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: VU-MIF-LCG2
+
+dn: Mds-Vo-name=SARA-MATRIX,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: SARA-MATRIX
+
+dn: Mds-Vo-name=tamu_brazos,Mds-Vo-name=local,o=grid
+Mds-Vo-name: tamu_brazos
+objectClass: Mds
+
+dn: Mds-Vo-name=RO-15-NIPNE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RO-15-NIPNE
+
+dn: Mds-Vo-name=nwicg_ndcms,Mds-Vo-name=local,o=grid
+Mds-Vo-name: nwicg_ndcms
+objectClass: Mds
+
+dn: Mds-Vo-name=RO-11-NIPNE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RO-11-NIPNE
+
+dn: Mds-Vo-name=UA_BITP_ARC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA_BITP_ARC
+Mds-validfrom: 20131120104804Z
+Mds-validto: 20131120114804Z
+
+dn: Mds-Vo-name=MK-03-FINKI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MK-03-FINKI
+
+dn: Mds-Vo-name=UA_ICYB_ARC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA_ICYB_ARC
+
+dn: Mds-Vo-name=RO-07-NIPNE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RO-07-NIPNE
+
+dn: Mds-Vo-name=INFN-TORINO,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-TORINO
+
+dn: Mds-Vo-name=purdue-rcac,Mds-Vo-name=local,o=grid
+Mds-Vo-name: purdue-rcac
+objectClass: Mds
+
+dn: Mds-Vo-name=HG-05-FORTH,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HG-05-FORTH
+
+dn: Mds-Vo-name=CIEMAT-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CIEMAT-LCG2
+
+dn: Mds-Vo-name=CY-01-KIMON,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CY-01-KIMON
+
+dn: Mds-Vo-name=UNI-FREIBURG,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNI-FREIBURG
+
+dn: Mds-Vo-name=egee.srce.hr,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: egee.srce.hr
+
+dn: Mds-Vo-name=RECAS-NAPOLI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RECAS-NAPOLI
+
+dn: Mds-Vo-name=INFN-BOLOGNA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-BOLOGNA
+
+dn: Mds-Vo-name=GILDA-PADOVA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GILDA-PADOVA
+
+dn: Mds-Vo-name=INFN-COSENZA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-COSENZA
+
+dn: Mds-Vo-name=TECHNION-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TECHNION-HEP
+
+dn: Mds-Vo-name=BEIJING-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BEIJING-LCG2
+
+dn: Mds-Vo-name=GILDA-SIRIUS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GILDA-SIRIUS
+
+dn: Mds-Vo-name=UA_ILTPE_ARC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UA_ILTPE_ARC
+Mds-validfrom: 20131120104702Z
+Mds-validto: 20131120114702Z
+
+dn: Mds-Vo-name=Hephy-Vienna,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: Hephy-Vienna
+
+dn: Mds-Vo-name=CNR-ILC-PISA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CNR-ILC-PISA
+
+dn: Mds-Vo-name=ZA-WITS-CORE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ZA-WITS-CORE
+
+dn: Mds-Vo-name=UNI-DORTMUND,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNI-DORTMUND
+
+dn: Mds-Vo-name=UKI-LT2-QMUL,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-LT2-QMUL
+
+dn: Mds-Vo-name=INFN-CATANIA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-CATANIA
+
+dn: Mds-Vo-name=INFN-TRIESTE,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-TRIESTE
+
+dn: Mds-Vo-name=CA-SCINET-T2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CA-SCINET-T2
+
+dn: Mds-Vo-name=AEGIS02-RCUB,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AEGIS02-RCUB
+
+dn: Mds-Vo-name=INFN-FERRARA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-FERRARA
+
+dn: Mds-Vo-name=INFN-PERUGIA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-PERUGIA
+
+dn: Mds-Vo-name=HK-HKU-CC-01,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HK-HKU-CC-01
+
+dn: Mds-Vo-name=UKI-LT2-RHUL,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-LT2-RHUL
+
+dn: Mds-Vo-name=ligo_uwm_nemo,Mds-Vo-name=local,o=grid
+Mds-Vo-name: ligo_uwm_nemo
+objectClass: Mds
+
+dn: Mds-Vo-name=BEgrid-BELNET,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BEgrid-BELNET
+
+dn: Mds-Vo-name=CYFRONET-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CYFRONET-LCG2
+
+dn: Mds-Vo-name=CA-TRIUMF-T2K,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CA-TRIUMF-T2K
+
+dn: Mds-Vo-name=nersc-pdsfsrm,Mds-Vo-name=local,o=grid
+Mds-Vo-name: nersc-pdsfsrm
+objectClass: Mds
+
+dn: Mds-Vo-name=TR-01-ULAKBIM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TR-01-ULAKBIM
+
+dn: Mds-Vo-name=ou_ochep_swt2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: ou_ochep_swt2
+objectClass: Mds
+
+dn: Mds-Vo-name=WEIZMANN-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: WEIZMANN-LCG2
+
+dn: Mds-Vo-name=TR-10-ULAKBIM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TR-10-ULAKBIM
+
+dn: Mds-Vo-name=brown-cms-new,Mds-Vo-name=local,o=grid
+Mds-Vo-name: brown-cms-new
+objectClass: Mds
+
+dn: Mds-Vo-name=GR-11-UPATRAS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GR-11-UPATRAS
+
+dn: Mds-Vo-name=TUDresden-ZIH,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TUDresden-ZIH
+
+dn: Mds-Vo-name=NCG-INGRID-PT,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: NCG-INGRID-PT
+
+dn: Mds-Vo-name=NIKHEF-ELPROD,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: NIKHEF-ELPROD
+
+dn: Mds-Vo-name=NO-NORGRID-T2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: NO-NORGRID-T2
+
+dn: Mds-Vo-name=INFN-FRASCATI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-FRASCATI
+
+dn: Mds-Vo-name=IEPSAS-Kosice,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IEPSAS-Kosice
+
+dn: Mds-Vo-name=JP-KEK-CRC-02,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: JP-KEK-CRC-02
+
+dn: Mds-Vo-name=wuppertalprod,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: wuppertalprod
+Mds-validfrom: 20131120104141Z
+Mds-validto: 20131120114141Z
+
+dn: Mds-Vo-name=HG-08-Okeanos,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HG-08-Okeanos
+
+dn: Mds-Vo-name=purdue-hansen,Mds-Vo-name=local,o=grid
+Mds-Vo-name: purdue-hansen
+objectClass: Mds
+
+dn: Mds-Vo-name=ucolorado_hep,Mds-Vo-name=local,o=grid
+Mds-Vo-name: ucolorado_hep
+objectClass: Mds
+
+dn: Mds-Vo-name=CAFPE-GRANADA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CAFPE-GRANADA
+
+dn: Mds-Vo-name=CNR-PROD-PISA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CNR-PROD-PISA
+
+dn: Mds-Vo-name=ou_oscer_atlas,Mds-Vo-name=local,o=grid
+Mds-Vo-name: ou_oscer_atlas
+objectClass: Mds
+
+dn: Mds-Vo-name=BEgrid-ULB-VUB,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BEgrid-ULB-VUB
+
+dn: Mds-Vo-name=IN-DAE-VECC-02,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN-DAE-VECC-02
+
+dn: Mds-Vo-name=uscms-fnal-wc1,Mds-Vo-name=local,o=grid
+Mds-Vo-name: uscms-fnal-wc1
+objectClass: Mds
+
+dn: Mds-Vo-name=UKI-LT2-IC-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-LT2-IC-HEP
+Mds-validfrom: 20131120104527Z
+Mds-validto: 20131120114527Z
+
+dn: Mds-Vo-name=bu_atlas_tier2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: bu_atlas_tier2
+objectClass: Mds
+
+dn: Mds-Vo-name=nysgrid-ccr-u2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: nysgrid-ccr-u2
+objectClass: Mds
+
+dn: Mds-Vo-name=BMRZ-FRANKFURT,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: BMRZ-FRANKFURT
+
+dn: Mds-Vo-name=AEGIS11-MISANU,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AEGIS11-MISANU
+
+dn: Mds-Vo-name=INFN-CNAF-LHCB,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-CNAF-LHCB
+
+dn: Mds-Vo-name=hu_atlas_tier2,Mds-Vo-name=local,o=grid
+Mds-Vo-name: hu_atlas_tier2
+objectClass: Mds
+
+dn: Mds-Vo-name=UNI-SIEGEN-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UNI-SIEGEN-HEP
+
+dn: Mds-Vo-name=IN2P3-SUBATECH,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IN2P3-SUBATECH
+
+dn: Mds-Vo-name=HG-04-CTI-CEID,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: HG-04-CTI-CEID
+
+dn: Mds-Vo-name=fnal_fermigrid,Mds-Vo-name=local,o=grid
+Mds-Vo-name: fnal_fermigrid
+objectClass: Mds
+
+dn: Mds-Vo-name=AEGIS09-FTN-KM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AEGIS09-FTN-KM
+
+dn: Mds-Vo-name=INFN-ROMA1-CMS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-ROMA1-CMS
+
+dn: Mds-Vo-name=UKI-LT2-Brunel,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-LT2-Brunel
+
+dn: Mds-Vo-name=FBF-Brescia-IT,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: FBF-Brescia-IT
+
+dn: Mds-Vo-name=ICEAGE-CATANIA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ICEAGE-CATANIA
+
+dn: Mds-Vo-name=T3_HU_Debrecen,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: T3_HU_Debrecen
+
+dn: Mds-Vo-name=grase-cse-magic,Mds-Vo-name=local,o=grid
+Mds-Vo-name: grase-cse-magic
+objectClass: Mds
+
+dn: Mds-Vo-name=purdue-rossmann,Mds-Vo-name=local,o=grid
+Mds-Vo-name: purdue-rossmann
+objectClass: Mds
+
+dn: Mds-Vo-name=INFN-BOLOGNA-T3,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-BOLOGNA-T3
+
+dn: Mds-Vo-name=Australia-ATLAS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: Australia-ATLAS
+
+dn: Mds-Vo-name=GR-04-FORTH-ICS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GR-04-FORTH-ICS
+
+dn: Mds-Vo-name=AEGIS01-IPB-SCL,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AEGIS01-IPB-SCL
+
+dn: Mds-Vo-name=UKI-LT2-UCL-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-LT2-UCL-HEP
+
+dn: Mds-Vo-name=KR-KISTI-GCRT-01,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: KR-KISTI-GCRT-01
+
+dn: Mds-Vo-name=GR-07-UOI-HEPLAB,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GR-07-UOI-HEPLAB
+
+dn: Mds-Vo-name=INFN-NAPOLI-ARGO,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-NAPOLI-ARGO
+
+dn: Mds-Vo-name=ARAGRID-CIENCIAS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ARAGRID-CIENCIAS
+
+dn: Mds-Vo-name=RU-Protvino-IHEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: RU-Protvino-IHEP
+
+dn: Mds-Vo-name=IISAS-Bratislava,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: IISAS-Bratislava
+
+dn: Mds-Vo-name=KR-KISTI-GSDC-01,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: KR-KISTI-GSDC-01
+
+dn: Mds-Vo-name=MY-UPM-BIRUNI-01,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: MY-UPM-BIRUNI-01
+
+dn: Mds-Vo-name=INFN-ROMA1-VIRGO,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-ROMA1-VIRGO
+
+dn: Mds-Vo-name=Kharkov-KIPT-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: Kharkov-KIPT-LCG2
+
+dn: Mds-Vo-name=CREATIS-INSA-LYON,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CREATIS-INSA-LYON
+
+dn: Mds-Vo-name=gridunesp_central,Mds-Vo-name=local,o=grid
+Mds-Vo-name: gridunesp_central
+objectClass: Mds
+
+dn: Mds-Vo-name=INFN-NAPOLI-ATLAS,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-NAPOLI-ATLAS
+
+dn: Mds-Vo-name=JP-HIROSHIMA-WLCG,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: JP-HIROSHIMA-WLCG
+
+dn: Mds-Vo-name=UKI-SCOTGRID-ECDF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-SCOTGRID-ECDF
+
+dn: Mds-Vo-name=AEGIS03-ELEF-LEDA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: AEGIS03-ELEF-LEDA
+
+dn: Mds-Vo-name=tufts_atlas_tier3,Mds-Vo-name=local,o=grid
+Mds-Vo-name: tufts_atlas_tier3
+objectClass: Mds
+
+dn: Mds-Vo-name=GILDA-INFN-CATANIA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GILDA-INFN-CATANIA
+
+dn: Mds-Vo-name=UKI-SOUTHGRID-SUSX,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-SOUTHGRID-SUSX
+
+dn: Mds-Vo-name=prague_cesnet_lcg2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: prague_cesnet_lcg2
+
+dn: Mds-Vo-name=GRISU-SPACI-NAPOLI,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRISU-SPACI-NAPOLI
+
+dn: Mds-Vo-name=INFN-NAPOLI-PAMELA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-NAPOLI-PAMELA
+
+dn: Mds-Vo-name=INFN-MILANO-ATLASC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: INFN-MILANO-ATLASC
+
+dn: Mds-Vo-name=Ru-Troitsk-INR-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: Ru-Troitsk-INR-LCG2
+
+dn: Mds-Vo-name=bellarmine-atlas-t3,Mds-Vo-name=local,o=grid
+Mds-Vo-name: bellarmine-atlas-t3
+objectClass: Mds
+
+dn: Mds-Vo-name=ROC_Canada_SERVICES,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ROC_Canada_SERVICES
+
+dn: Mds-Vo-name=UKI-SOUTHGRID-RALPP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-SOUTHGRID-RALPP
+Mds-validfrom: 20131120104503Z
+Mds-validto: 20131120114503Z
+
+dn: Mds-Vo-name=ru-Moscow-FIAN-LCG2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: ru-Moscow-FIAN-LCG2
+
+dn: Mds-Vo-name=CA-MCGILL-CLUMEQ-T2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CA-MCGILL-CLUMEQ-T2
+
+dn: Mds-Vo-name=UKI-SOUTHGRID-OX-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-SOUTHGRID-OX-HEP
+
+dn: Mds-Vo-name=UKI-SCOTGRID-GLASGOW,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-SCOTGRID-GLASGOW
+
+dn: Mds-Vo-name=TRIGRID-INFN-CATANIA,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: TRIGRID-INFN-CATANIA
+
+dn: Mds-Vo-name=UKI-NORTHGRID-MAN-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-NORTHGRID-MAN-HEP
+
+dn: Mds-Vo-name=UKI-NORTHGRID-LIV-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-NORTHGRID-LIV-HEP
+
+dn: Mds-Vo-name=UKI-SOUTHGRID-CAM-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-SOUTHGRID-CAM-HEP
+
+dn: Mds-Vo-name=UKI-SOUTHGRID-BHAM-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-SOUTHGRID-BHAM-HEP
+
+dn: Mds-Vo-name=UKI-NORTHGRID-SHEF-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-NORTHGRID-SHEF-HEP
+
+dn: Mds-Vo-name=UKI-SOUTHGRID-BRIS-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-SOUTHGRID-BRIS-HEP
+
+dn: Mds-Vo-name=CA-ALBERTA-WESTGRID-T2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CA-ALBERTA-WESTGRID-T2
+
+dn: Mds-Vo-name=UKI-NORTHGRID-LANCS-HEP,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: UKI-NORTHGRID-LANCS-HEP
+
+dn: Mds-Vo-name=CA-VICTORIA-WESTGRID-T2,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: CA-VICTORIA-WESTGRID-T2
+
+dn: GlueSiteUniqueID=WUT,Mds-Vo-name=WUT,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Warsaw University of Technology
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:wlcg-admin@if.pw.edu.pl
+GlueSiteSecurityContact: mailto:wlcg-admin@if.pw.edu.pl
+GlueSiteUniqueID: WUT
+GlueSiteName: WUT
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 21
+GlueSiteLatitude: 52.25
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_PL
+GlueSiteOtherInfo: GRID=WLCG
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteOtherInfo: WLCG_NAMEICON=http://alix3.if.pw.edu.pl/img2.gif
+GlueSiteOtherInfo: WLCG_TIER=3
+GlueSiteUserSupportContact: mailto:wlcg-support@if.pw.edu.pl
+GlueSiteWeb: alix3.if.pw.edu.pl
+GlueSiteEmailContact: mailto:wlcg-admin@if.pw.edu.pl
+GlueSiteLocation: Warsaw, Poland
+
+dn: GlueSiteUniqueID=WT2,Mds-Vo-name=WT2,Mds-Vo-name=local,o=grid
+GlueSiteWeb: UNAVAILABLE
+GlueSiteSecurityContact: mailto: osg-support@slac.stanford.edu
+GlueSiteDescription: OSG Site
+GlueSiteSponsor: atlas:100
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSiteSysAdminContact: mailto: osg-support@slac.stanford.edu
+GlueSiteName: WT2
+GlueSiteUniqueID: WT2
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -122
+GlueSiteLatitude: 37
+GlueForeignKey: GlueSiteUniqueID=WT2
+GlueSiteEmailContact: mailto: osg-support@slac.stanford.edu
+GlueSchemaVersionMajor: 1
+GlueSiteUserSupportContact: mailto: osg-support@slac.stanford.edu
+GlueSiteLocation: Menlo Park, USA
+
+dn: GlueSiteUniqueID=pic,Mds-Vo-name=pic,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Tier 1: PIC site
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:lcg.support@pic.es
+GlueSiteSecurityContact: mailto:lcg.support@pic.es
+GlueSiteUniqueID: pic
+GlueSiteName: pic
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 2.110628
+GlueSiteLatitude: 41.500850
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: BLOG=http://lhcatpic.blogspot.com/feeds/posts/default
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_IBERGRID
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteOtherInfo: GRID=WLCG
+GlueSiteOtherInfo: ICON=http://www.ifae.es/pic/images/PIC-logo-web.jpg
+GlueSiteOtherInfo: ROC=South Western Europe/PIC
+GlueSiteOtherInfo: WLCG_NAME=ES-PIC
+GlueSiteOtherInfo: WLCG_PARENT=CERN-PROD
+GlueSiteOtherInfo: WLCG_TIER=1
+GlueSiteUserSupportContact: mailto:lcg.support@pic.es
+GlueSiteWeb: http://www.pic.es
+GlueSiteEmailContact: mailto:lcg.support@pic.es
+GlueSiteLocation: Bellaterra, Spain
+
+dn: GlueSiteUniqueID=UCD,Mds-Vo-name=UCD,Mds-Vo-name=local,o=grid
+GlueSiteWeb: http://wiki.cse.ucdavis.edu/support:systems:cms
+GlueSiteSecurityContact: mailto: tlknight@ucdavis.edu
+GlueSiteDescription: OSG Site
+GlueSiteSponsor: cms:100
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSiteSysAdminContact: mailto: tlknight@ucdavis.edu
+GlueSiteName: UCD
+GlueSiteUniqueID: UCD
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -121.754179
+GlueSiteLatitude: 38.53729
+GlueForeignKey: GlueSiteUniqueID=UCD
+GlueSiteEmailContact: mailto: tlknight@ucdavis.edu
+GlueSchemaVersionMajor: 1
+GlueSiteUserSupportContact: mailto: tlknight@ucdavis.edu
+GlueSiteLocation: Davis, CA, USA
+
+dn: GlueSiteUniqueID=CSC,Mds-Vo-name=CSC,Mds-Vo-name=local,o=grid
+GlueSiteDescription: CSC - Finnish Grid Infrastructure (FGI) site
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:grid-support@csc.fi
+GlueSiteSecurityContact: mailto:grid-support@csc.fi
+GlueSiteUniqueID: CSC
+GlueSiteName: CSC
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 24.83
+GlueSiteLatitude: 60.18
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:grid-support@csc.fi
+GlueSiteWeb: http://www.csc.fi/
+GlueSiteEmailContact: mailto:grid-support@csc.fi
+GlueSiteLocation: Espoo, Finland
+
+dn: GlueSiteUniqueID=FZJ,Mds-Vo-name=FZJ,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Forschungszentrum Juelich GmbH
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:ngi-de@fz-juelich.de
+GlueSiteSecurityContact: mailto:security@fz-juelich.de
+GlueSiteUniqueID: FZJ
+GlueSiteName: FZJ
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 6.4
+GlueSiteLatitude: 50.91
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGI_NGI=NGI_DE
+GlueSiteOtherInfo: GRID=Forschungszentrum Juelich GmbH
+GlueSiteUserSupportContact: mailto:dgrid-support@fz-juelich.de
+GlueSiteWeb: http://www.fz-juelich.de
+GlueSiteEmailContact: mailto:ngi-de@fz-juelich.de
+GlueSiteLocation: Juelich, Germany
+
+dn: Mds-Vo-name=GRIF-LLR,Mds-Vo-name=GRIF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRIF-LLR
+
+dn: Mds-Vo-name=GRIF-LAL,Mds-Vo-name=GRIF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRIF-LAL
+
+dn: Mds-Vo-name=GRIF-APC,Mds-Vo-name=GRIF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRIF-APC
+
+dn: GlueSiteUniqueID=ITEP,Mds-Vo-name=ITEP,Mds-Vo-name=local,o=grid
+GlueSiteDescription: ITEP
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:lublev@itep.ru
+GlueSiteSecurityContact: mailto:lublev@itep.ru
+GlueSiteUniqueID: ITEP
+GlueSiteName: ITEP
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 37.37
+GlueSiteLatitude: 55.55
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: GRID=WLCG
+GlueSiteOtherInfo: GRID=EGEE
+GlueSiteUserSupportContact: mailto:lublev@itep.ru
+GlueSiteWeb: http://egee.itep.ru
+GlueSiteEmailContact: mailto:lublev@itep.ru
+GlueSiteLocation: Moscow, Russia
+
+dn: GlueSiteUniqueID=GLOW,Mds-Vo-name=GLOW,Mds-Vo-name=local,o=grid
+GlueSiteWeb: http://www.hep.wisc.edu/cms/comp/osg/site_policy.html
+GlueSiteSecurityContact: mailto: cmsops@hep.wisc.edu
+GlueSiteDescription: OSG Site
+GlueSiteSponsor: cms:100
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSiteSysAdminContact: mailto: cmsops@hep.wisc.edu
+GlueSiteName: GLOW
+GlueSiteUniqueID: GLOW
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -89.4011
+GlueSiteLatitude: 43.0731
+GlueForeignKey: GlueSiteUniqueID=GLOW
+GlueSiteEmailContact: mailto: cmsops@hep.wisc.edu
+GlueSchemaVersionMajor: 1
+GlueSiteUserSupportContact: mailto: cmsops@hep.wisc.edu
+GlueSiteLocation: Madison, WI, USA
+
+dn: GlueSiteUniqueID=BIFI,Mds-Vo-name=BIFI,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Bifi site
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:egee-admin@bifi.es
+GlueSiteSecurityContact: mailto:egee-admin@bifi.es
+GlueSiteUniqueID: BIFI
+GlueSiteName: BIFI
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -0.8975636959075928
+GlueSiteLatitude: 41.64388683092849
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_IBERGRID
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:egee-admin@bifi.es
+GlueSiteWeb: http://bifi.unizar.es
+GlueSiteEmailContact: mailto:egee-admin@bifi.es
+GlueSiteLocation: Zaragoza, Spain
+
+dn: GlueSiteUniqueID=CBPF,Mds-Vo-name=CBPF,Mds-Vo-name=local,o=grid
+GlueSiteDescription: BRAZILIAN CENTER FOR PHYSICS RESEARCH
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:gridlafex@cbpf.br
+GlueSiteSecurityContact: mailto:gridlafex@cbpf.br
+GlueSiteUniqueID: CBPF
+GlueSiteName: CBPF
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -43.17386
+GlueSiteLatitude: -22.95398
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_ROC=LatinAmerica
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteOtherInfo: GRID=WLCG
+GlueSiteOtherInfo: WLCG_TIER=2
+GlueSiteUserSupportContact: mailto:gridlafex@cbpf.br
+GlueSiteWeb: http://www.cbpf.br
+GlueSiteEmailContact: mailto:gridlafex@cbpf.br
+GlueSiteLocation: Rio de Janeiro, Brazil
+
+dn: Mds-Vo-name=resource,Mds-Vo-name=M3PEC,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: resource
+
+dn: Mds-Vo-name=resource,Mds-Vo-name=OBSPM,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: resource
+
+dn: GlueSiteUniqueID=ifae,Mds-Vo-name=ifae,Mds-Vo-name=local,o=grid
+GlueSiteDescription: LCG Site
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:lcg.support@pic.es
+GlueSiteSecurityContact: mailto:lcg.support@pic.es
+GlueSiteUniqueID: ifae
+GlueSiteName: ifae
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 2.110628
+GlueSiteLatitude: 41.500850
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_IBERGRID
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteOtherInfo: GRID=WLCG
+GlueSiteOtherInfo: ROC=South Western Europe/IFAE
+GlueSiteOtherInfo: WLCG_NAME=ES-IFAE
+GlueSiteOtherInfo: WLCG_PARENT=pic
+GlueSiteOtherInfo: WLCG_TIER=2
+GlueSiteUserSupportContact: mailto:lcg.support@pic.es
+GlueSiteWeb: http://www.ifae.es
+GlueSiteEmailContact: mailto:lcg.support@pic.es
+GlueSiteLocation: Bellaterra, Spain
+
+dn: GlueSiteUniqueID=BCBR,Mds-Vo-name=BCBR,Mds-Vo-name=local,o=grid
+GlueSiteDescription: NMR Spectroscopy Group, Bijvoet Center for Biomolecular R
+ esearch
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:enmr@nmr.chem.uu.nl
+GlueSiteSecurityContact: mailto:enmr@nmr.chem.uu.nl
+GlueSiteUniqueID: BCBR
+GlueSiteName: BCBR
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 5.2
+GlueSiteLatitude: 52.1
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGI_NGI=NGI_NL
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:enmr@nmr.chem.uu.nl
+GlueSiteWeb: http://www.nmr.chem.uu.nl/
+GlueSiteEmailContact: mailto:enmr@nmr.chem.uu.nl
+GlueSiteLocation: Utrecht, The Netherlands
+
+dn: Mds-Vo-name=GRIF-IRFU,Mds-Vo-name=GRIF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRIF-IRFU
+
+dn: GlueSiteUniqueID=ITWM,Mds-Vo-name=ITWM,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Fraunhofer ITWM site
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:egee-admin@itwm.fraunhofer.de
+GlueSiteSecurityContact: mailto:egee-admin@itwm.fraunhofer.de
+GlueSiteUniqueID: ITWM
+GlueSiteName: ITWM
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 7.75
+GlueSiteLatitude: 49.45
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGI_NGI=NGI_DE
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:egee-admin@itwm.fraunhofer.de
+GlueSiteWeb: http://www.itwm.fraunhofer.de
+GlueSiteEmailContact: mailto:egee-admin@itwm.fraunhofer.de
+GlueSiteLocation: Kaiserslautern, Germany
+
+dn: Mds-Vo-name=GRIF-IPNO,Mds-Vo-name=GRIF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRIF-IPNO
+
+dn: GlueSiteUniqueID=PSNC,Mds-Vo-name=PSNC,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Institute of Bioorganic Chemistry Polish Academy of Scien
+ ces Poznan Supercomputing and Networking Center
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:egee@man.poznan.pl
+GlueSiteSecurityContact: mailto:egee@man.poznan.pl
+GlueSiteUniqueID: PSNC
+GlueSiteName: PSNC
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 16.91753
+GlueSiteLatitude: 52.41144
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_PL
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteOtherInfo: GRID=WLCG
+GlueSiteOtherInfo: WLCG_TIER=2
+GlueSiteUserSupportContact: mailto:egee@man.poznan.pl
+GlueSiteWeb: http://www.man.poznan.pl
+GlueSiteEmailContact: mailto:egee@man.poznan.pl
+GlueSiteLocation: Poznan, Poland
+
+dn: GlueSiteUniqueID=GRIF,Mds-Vo-name=GRIF,Mds-Vo-name=local,o=grid
+GlueSiteSecurityContact: mailto:grid.admin@grif.fr
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:grid.admin@grif.fr
+GlueSiteDescription: Grille au service de la Recherche en Ile de France
+GlueSiteUniqueID: GRIF
+GlueSiteName: GRIF
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 2.170686
+GlueSiteLatitude: 48.699262
+GlueSiteWeb: http://grif.fr/
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_FRANCE
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteOtherInfo: GRID=WLCG
+GlueSiteOtherInfo: WLCG_NAME=FR-GRIF
+GlueSiteOtherInfo: WLCG_PARENT=IN2P3-CC
+GlueSiteOtherInfo: WLCG_TIER=2
+GlueSiteUserSupportContact: mailto:grid.support@grif.fr
+GlueSchemaVersionMajor: 1
+GlueSiteEmailContact: mailto:grid.admin@grif.fr
+GlueSiteLocation: Orsay, France
+
+dn: GlueSiteUniqueID=SCAI,Mds-Vo-name=SCAI,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Fraunhofer Institute SCAI
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:egee@scai.fraunhofer.de
+GlueSiteSecurityContact: mailto:egee@scai.fraunhofer.de
+GlueSiteUniqueID: SCAI
+GlueSiteName: SCAI
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 7.1951
+GlueSiteLatitude: 50.7493
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGI_NGI=NGI_DE
+GlueSiteOtherInfo: GRID=D-Grid
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:egee@scai.fraunhofer.de
+GlueSiteWeb: http://www.scai.fraunhofer.de
+GlueSiteEmailContact: mailto:egee@scai.fraunhofer.de
+GlueSiteLocation: Sankt Augustin, Germany
+
+dn: GlueSiteUniqueID=CRS4,Mds-Vo-name=CRS4,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Research Center in Science and Technology Park Polaris
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:envirogrids@crs4.it,chelaman@crs4.it,matteo@cr
+ s4.it
+GlueSiteSecurityContact: mailto:matteo@crs4.it
+GlueSiteUniqueID: CRS4
+GlueSiteName: CRS4
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 8.93289
+GlueSiteLatitude: 38.98702
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_IT
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:envirogrids@crs4.it
+GlueSiteWeb: http://www.crs4.it
+GlueSiteEmailContact: mailto:envirogrids@crs4.it,chelaman@crs4.it,matteo@crs4.
+ it
+GlueSiteLocation: Cagliari, Italy
+
+dn: GlueSiteUniqueID=MWT2,Mds-Vo-name=MWT2,Mds-Vo-name=local,o=grid
+GlueSiteWeb: http://www.mwt2.org/policy.html
+GlueSiteSecurityContact: mailto: support@mwt2.org
+GlueSiteDescription: OSG Site
+GlueSiteSponsor: atlas:100
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSiteSysAdminContact: mailto: support@mwt2.org
+GlueSiteName: MWT2
+GlueSiteUniqueID: MWT2
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -87.6500
+GlueSiteLatitude: 41.8500
+GlueForeignKey: GlueSiteUniqueID=MWT2
+GlueSiteEmailContact: mailto: support@mwt2.org
+GlueSchemaVersionMajor: 1
+GlueSiteUserSupportContact: mailto: support@mwt2.org
+GlueSiteLocation: Chicago, IL, US
+
+dn: Mds-Vo-name=GRIF-LPNHE,Mds-Vo-name=GRIF,Mds-Vo-name=local,o=grid
+objectClass: Mds
+Mds-Vo-name: GRIF-LPNHE
+
+dn: GlueSiteUniqueID=SAMPA,Mds-Vo-name=SAMPA,Mds-Vo-name=local,o=grid
+GlueSiteDescription: SAMPA ALICE TIER-2
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:sampa-admin@dfn.if.usp.br
+GlueSiteSecurityContact: mailto:sampa-security@dfn.if.usp.br
+GlueSiteUniqueID: SAMPA
+GlueSiteName: SAMPA
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -46.37
+GlueSiteLatitude: -23.32
+GlueSchemaVersionMajor: 1
+GlueSiteUserSupportContact: mailto:sampa-admin@dfn.if.usp.br
+GlueSiteWeb: http://sampa.if.usp.br
+GlueSiteEmailContact: mailto:sampa-admin@dfn.if.usp.br
+GlueSiteLocation: Sao Paulo, Brazil
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_ROC=LatinAmerica
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteOtherInfo: GRID=WLCG
+GlueSiteOtherInfo: WLCG_PARENT=ROCLA
+GlueSiteOtherInfo: WLCG_TIER=2
+
+dn: GlueSiteUniqueID=OBSPM,Mds-Vo-name=OBSPM,Mds-Vo-name=local,o=grid
+GlueSiteDescription: EGI Site
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:admin.grid@obspm.fr
+GlueSiteSecurityContact: mailto:admin.grid@obspm.fr
+GlueSiteUniqueID: OBSPM
+GlueSiteName: OBSPM
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 2.22744
+GlueSiteLatitude: 48.805169
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_FRANCE
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:admin.grid@obspm.fr
+GlueSiteWeb: http://www-grid.obspm.fr/
+GlueSiteEmailContact: mailto:admin.grid@obspm.fr
+GlueSiteLocation: Meudon, France
+
+dn: GlueSiteUniqueID=EENet,Mds-Vo-name=EENet,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Estonian Educational and Research Network
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:grid-admins@eenet.ee
+GlueSiteSecurityContact: mailto:grid-admins@eenet.ee
+GlueSiteUniqueID: EENet
+GlueSiteName: EENet
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 26.72
+GlueSiteLatitude: 58.38
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_NDGF
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:grid-admins@eenet.ee
+GlueSiteWeb: http://grid.eenet.ee
+GlueSiteEmailContact: mailto:grid-admins@eenet.ee
+GlueSiteLocation: Tartu, Estonia
+
+dn: GlueSiteUniqueID=IEETA,Mds-Vo-name=IEETA,Mds-Vo-name=local,o=grid
+GlueSiteDescription: IEETA-SIAS Grid Initiative
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:grid-Admin@ieeta.pt
+GlueSiteSecurityContact: mailto:grid-Admin@ieeta.pt
+GlueSiteUniqueID: IEETA
+GlueSiteName: IEETA
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -8.659
+GlueSiteLatitude: 40.635
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: EGI_NGI=NGI_IBERGRID
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:grid-Admin@ieeta.pt
+GlueSiteWeb: http://www.ieeta.pt
+GlueSiteEmailContact: mailto:grid-Admin@ieeta.pt
+GlueSiteLocation: Aveiro, Portugal
+
+dn: GlueSiteUniqueID=ARNES,Mds-Vo-name=ARNES,Mds-Vo-name=local,o=grid
+GlueSiteDescription: Arnes site
+GlueSiteSponsor: none
+objectClass: GlueTop
+objectClass: GlueSite
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSiteSysAdminContact: mailto:grid-support@arnes.si
+GlueSiteSecurityContact: mailto:grid-support@arnes.si
+GlueSiteUniqueID: ARNES
+GlueSiteName: ARNES
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: 14.48767
+GlueSiteLatitude: 46.04217
+GlueSchemaVersionMajor: 1
+GlueSiteOtherInfo: CONFIG=yaim
+GlueSiteOtherInfo: EGEE_ROC=NGI_SI
+GlueSiteOtherInfo: EGEE_SERVICE=prod
+GlueSiteOtherInfo: GRID=EGI
+GlueSiteUserSupportContact: mailto:grid-support@arnes.si
+GlueSiteWeb: http://www.arnes.si
+GlueSiteEmailContact: mailto:grid-support@arnes.si
+GlueSiteLocation: Ljubljana, Slovenia
+
+dn: GlueSiteUniqueID=RENCI,Mds-Vo-name=RENCI,Mds-Vo-name=local,o=grid
+GlueSiteWeb: http://brgw1.renci.org/policy/
+GlueSiteSecurityContact: mailto: rciadmin@renci.org
+GlueSiteDescription: OSG Site
+GlueSiteSponsor: engage:100
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSiteSysAdminContact: mailto: rciadmin@renci.org
+GlueSiteName: RENCI
+GlueSiteUniqueID: RENCI
+GlueSchemaVersionMinor: 3
+GlueSiteLongitude: -79.02
+GlueSiteLatitude: 35.94
+GlueForeignKey: GlueSiteUniqueID=RENCI
+GlueSiteEmailContact: mailto: rciadmin@renci.org
+GlueSchemaVersionMajor: 1
+GlueSiteUserSupportContact: mailto: rciadmin@renci.org
+GlueSiteLocation: Chapel Hill, US
+
