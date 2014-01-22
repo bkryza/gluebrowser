@@ -122,7 +122,7 @@
           ["-h" "--help" "Show help" :flag true :default false]
           ["-s" "--host" "GLUE LDAP host" :default "127.0.0.1"]
           ["-p" "--port" "GLUE LDAP port" :default 389]
-          ["-d" "--dn" "Authentication user DN" :default "Mds-Vo-name=local,o=grid"] ; Wydaje mi się, że na czas samej pracy nad projektem, możęmy ustawić tutaj default, Michał
+          ["-d" "--dn" "Authentication user DN" :default "cn=admin,Mds-Vo-name=local,o=grid"] ; Wydaje mi się, że na czas samej pracy nad projektem, możęmy ustawić tutaj default, Michał
           ["-w" "--password" "Authentication password"]
           ["-ls" "--list-sites" "List GLUE Sites" :flag true :default false]
           ["-lv" "--list-services" "List GLUE Services" :flag true :default false]
@@ -134,11 +134,12 @@
           ["-lsa" "--list-sa" "List GLUE Storage Areas" :flag true :default false]
           ["-lvo" "--list-vo" "List GLUE Virtual Organizations" :flag true :default false]
           )]
+
+    ;(println "Ustawione argumenty uruchomienia:")
+    ;(println opts)
     ;;
     ;; Display help if -h was passed in the argument list, then exit
     ;;
-    (println "Ustawione argumenty uruchomienia:")
-    (println opts)
     (when (:help opts)
       (println (project-description))
       (println banner)
