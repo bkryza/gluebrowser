@@ -14,7 +14,7 @@
 ;
 ; Definition of LDAP queries compatible with ldap-clj format
 ; for retrieving list of GLUE objects by specific type and
-; limited to certain attributes }
+; limited to certain attributes
 ;
 (def glue-queries
   {
@@ -22,13 +22,12 @@
     :list-clusters '("GlueClusters" :GlueClusterUniqueID)
     :list-subclusters '("GlueSubclusters" :GlueSubclusterUniqueID)
     :list-ce '("GlueCE" :GlueCEUniqueID)
-    :list-software '("GlueSoftware" :GlueSoftware);check
+    :list-software '("GlueSoftware" :GlueSoftware);wrong
     :list-se '("GlueSE" :GlueSEUniqueID)
-    :list-sa '("GlueSA" :GlueSAUniqueID)
-    :list-vo '("GlueVO" :GlueVO)
+    :list-sa '("GlueSA" :GlueSAUniqueID);wrong
+    :list-vo '("GlueVO" :GlueVOViewLocalID);??
     :list-services '("GlueServices" :GlueServicesUniqueID)
-    }
-  )
+    })
 
 
 (defn glue-object-list-query

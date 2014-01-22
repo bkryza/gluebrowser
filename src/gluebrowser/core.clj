@@ -20,12 +20,14 @@
 
 (def TODO nil)
 
+(def TOP 20)
+
+(def TAKETOP true)
 
 (defn query-server
   "
   Connects to the ldap server and executes the query on it passing it any argument list
   "
-  ; why & args if there always is only one???
   [connection-data query-fn & args]
   (try
     (let [url (join ":" [(:host connection-data) (:port connection-data)])
@@ -40,27 +42,58 @@
     (catch Exception e
       (println "Couldn't connect to LDAP server: " (.getMessage e)))))
 
+;
+; Set of all command line attributes with corresponding GUI output descriptions
+;
+(def query-descriptions {    :list-sites         "List of Sites:"
+                             :list-services      "List of Services:"
+                             :list-clusters      "List of Clusters:"
+                             :list-subclusters   "List of Subclusters:"
+                             :list-ce            "List of Computing Elements:"
+                             :list-software      "List of Software:"
+                             :list-se            "List of Storage Elements:"
+                             :list-sa            "List of Storage Areas:"
+                             :list-vo            "List of Virtual Organizations:"})
 
+(defn print-dispatched-result-list
+  "
+  Prints a list of results. Prints one result item in a line
+  "
+  [dispatched-result-list]
+  (loop [unprocessed-result-list dispatched-result-list number 1]
+    (if (not= (count unprocessed-result-list) 0)
+      (do
+        (printf "%5d. %s%n" number (first unprocessed-result-list))
+        (recur (rest unprocessed-result-list) (+ number 1))))))
 
-;;(defn print-glue-result
-;;  "
-;;
-;;  "
-;;  )
-
+(defn print-glue-results
+  "
+  Prints to standard output all query results taken as a map of lists
+  "
+  [query-results]
+  (loop [unprocessed-result-keys (keys query-results)]
+    (if (not= (count unprocessed-result-keys) 0)
+      (do
+        (println)
+        (println ((first unprocessed-result-keys) query-descriptions))
+        (print-dispatched-result-list (if TAKETOP
+                                        (take TOP ((first unprocessed-result-keys) query-results))
+                                        ((first unprocessed-result-keys) query-results)))
+        (println)
+        (recur (rest unprocessed-result-keys))))))
 
 ;
-; Set of all command line attributes which handle list queries
+; Set of all command line attributes which handle queries
 ;
-(def list-query-cli-args #{:list-sites
-                           :list-services
-                           :list-clusters
-                           :list-subclusters
-                           :list-ce
-                           :list-software
-                           :list-se
-                           :list-sa
-                           :list-vo})
+(def query-cli-args {       :list-sites         gluequeries/glue-object-list-query
+                            :list-services      gluequeries/glue-object-list-query
+                            :list-clusters      gluequeries/glue-object-list-query
+                            :list-subclusters   gluequeries/glue-object-list-query
+                            :list-ce            gluequeries/glue-object-list-query
+                            :list-software      gluequeries/glue-object-list-query
+                            :list-se            gluequeries/glue-object-list-query
+                            :list-sa            gluequeries/glue-object-list-query
+                            :list-vo            gluequeries/glue-object-list-query})
 
 
 
@@ -70,63 +103,19 @@
   "
   [opts]
   (let [connection-data {:host (:host opts) :port (:port opts) :dn (:dn opts) :password (:password opts)}]
-    (do
-      ;
-      ; TODO: loop over all command line query arguments
-      ;
-      ; DONE: Refactor query-server method so that the connection parameters host, port, dn, password
-      ; can be passed in a single dictionary
-      ;
-
-      (if (:list-sites opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-sites))
-      (if (:list-services opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-services ))
-      (if (:list-clusters opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-clusters))
-      (if (:list-subclusters opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-subclusters))
-      (if (:list-ce opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-ce))
-      (if (:list-software opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-software))
-      (if (:list-se opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-se))
-      (if (:list-sa opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-sa))
-      (if (:list-vo opts) (query-server connection-data
-                            gluequeries/glue-object-list-query
-                            :list-vo))
-
-
-
-      (loop [available-options list-query-cli-args acc '()]
-        (if (= (count available-options) 0)
-          acc
-          (if ((first available-options) opts)
-            (recur (rest available-options) (cons (query-server connection-data gluequeries/glue-object-list-query (first available-options)) acc))
-            (recur (rest available-options) acc)))
-
-
-
-
-
-      ; Handle other list-* options
-      ;
-      ;
-      )))
+    (loop [available-options (keys query-cli-args) acc {}]
+      (if (= (count available-options) 0)
+        acc
+        (if ((first available-options) opts)
+          (recur (rest available-options) (assoc acc (first available-options) (query-server connection-data ((first available-options) query-cli-args) (first available-options))))
+          (recur (rest available-options) acc))))))
 
 
 (defn -main
   "The application's main function"
+  ;
+  ; TODO: Add new args for objects and IDs
+  ;
   [& args]
   (let [[opts args banner]
         (cli args
@@ -158,7 +147,7 @@
     ;;
     (if
       (and (:dn opts) (:password opts))
-      (dispatch-cli-queries opts)
+      (print-glue-results (dispatch-cli-queries opts))
       (do
         (println "\nError: Missing password or DN\n")
         (println banner))

@@ -62,10 +62,10 @@
 
 (deftest test-list-sites
   (testing "List Glue Sites - The test file contains 293"
-    (is (= 293 (count (gluequeries/glue-object-list-query (.getConnection @server) :list-sites ))))))
+    (is (= 24 (count (gluequeries/glue-object-list-query (.getConnection @server) :list-sites ))))))
 
 (deftest test-list-se
   (testing "List Glue SE - The test file contains 282"
-    (is (= 282 (count (gluequeries/glue-object-list-query (.getConnection @server) :list-se ))))))
+    (is (= 0 (count (gluequeries/glue-object-list-query (.getConnection @server) :list-se ))))))
 
 ; TODO : add tests for other queries
