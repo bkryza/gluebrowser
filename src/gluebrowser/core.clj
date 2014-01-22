@@ -137,6 +137,8 @@
     ;;
     ;; Display help if -h was passed in the argument list, then exit
     ;;
+    (println "Ustawione argumenty uruchomienia:")
+    (println opts)
     (when (:help opts)
       (println (project-description))
       (println banner)
