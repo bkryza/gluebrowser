@@ -122,7 +122,7 @@
           ["-h" "--help" "Show help" :flag true :default false]
           ["-s" "--host" "GLUE LDAP host" :default "127.0.0.1"]
           ["-p" "--port" "GLUE LDAP port" :default 389]
-          ["-d" "--dn" "Authentication user DN" ]
+          ["-d" "--dn" "Authentication user DN" :default "Mds-Vo-name=local,o=grid"] ; Wydaje mi się, że na czas samej pracy nad projektem, możęmy ustawić tutaj default, Michał
           ["-w" "--password" "Authentication password"]
           ["-ls" "--list-sites" "List GLUE Sites" :flag true :default false]
           ["-lv" "--list-services" "List GLUE Services" :flag true :default false]
