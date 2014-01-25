@@ -1,6 +1,6 @@
 (ns gluebrowser.core
   (:use [clojure.tools.cli :only (cli)])
-  (:use [clojure.string :only (join)])
+  (:use [clojure.string :only (join split)])
   (:require [clj-ldap.client :as ldap])
   (:require [gluebrowser.gluequeries :as gluequeries])
   (:use [clojure.tools.logging :only (info error)] )
@@ -24,6 +24,9 @@
 
 (def TAKETOP true)
 
+;(def default-query-dn "GlueSiteUniqueID=CYFRONET-LCG2,Mds-Vo-name=CYFRONET-LCG2,Mds-Vo-name=local,o=grid") ; line 13211
+
+
 (defn query-server
   "
   Connects to the ldap server and executes the query on it passing it any argument list
@@ -42,59 +45,64 @@
     (catch Exception e
       (println "Couldn't connect to LDAP server: " (.getMessage e)))))
 
+
 ;
 ; Set of all command line attributes with corresponding GUI output descriptions
 ;
-(def query-descriptions {    :list-sites         "List of Sites:"
-                             :list-services      "List of Services:"
-                             :list-clusters      "List of Clusters:"
-                             :list-subclusters   "List of Subclusters:"
-                             :list-ce            "List of Computing Elements:"
-                             :list-software      "List of Software:"
-                             :list-se            "List of Storage Elements:"
-                             :list-sa            "List of Storage Areas:"
-                             :list-vo            "List of Virtual Organizations:"})
+(def query-descriptions {:list-sites         "List of Sites:"
+                         :list-services      "List of Services:"
+                         :list-clusters      "List of Clusters:"
+                         :list-subclusters   "List of Subclusters:"
+                         :list-ce            "List of Computing Elements:"
+                         :list-software      "List of Software:"
+                         :list-se            "List of Storage Elements:"
+                         :list-sa            "List of Storage Areas:"
+                         :list-vo            "List of Virtual Organizations:"})
 
-(defn print-dispatched-result-list
+
+(defn print-list
   "
   Prints a list of results. Prints one result item in a line
   "
-  [dispatched-result-list]
-  (loop [unprocessed-result-list dispatched-result-list number 1]
-    (if (not= (count unprocessed-result-list) 0)
+  [items-list]
+  (loop [unprocessed-items-list items-list number 1]
+    (if (not= (count unprocessed-items-list) 0)
       (do
-        (printf "%5d. %s%n" number (first unprocessed-result-list))
-        (recur (rest unprocessed-result-list) (+ number 1))))))
+        (printf "%5d. %s%n" number (first unprocessed-items-list))
+        (recur (rest unprocessed-items-list) (+ number 1))))))
 
-(defn print-glue-results
-  "
-  Prints to standard output all query results taken as a map of lists
-  "
-  [query-results]
-  (loop [unprocessed-result-keys (keys query-results)]
-    (if (not= (count unprocessed-result-keys) 0)
-      (do
-        (println)
-        (println ((first unprocessed-result-keys) query-descriptions))
-        (print-dispatched-result-list (if TAKETOP
-                                        (take TOP ((first unprocessed-result-keys) query-results))
-                                        ((first unprocessed-result-keys) query-results)))
-        (println)
-        (recur (rest unprocessed-result-keys))))))
 
 ;
 ; Set of all command line attributes which handle queries
 ;
-(def query-cli-args {       :list-sites         gluequeries/glue-object-list-query
-                            :list-services      gluequeries/glue-object-list-query
-                            :list-clusters      gluequeries/glue-object-list-query
-                            :list-subclusters   gluequeries/glue-object-list-query
-                            :list-ce            gluequeries/glue-object-list-query
-                            :list-software      gluequeries/glue-object-list-query
-                            :list-se            gluequeries/glue-object-list-query
-                            :list-sa            gluequeries/glue-object-list-query
-                            :list-vo            gluequeries/glue-object-list-query})
+(def list-query-cli-args #{ :list-sites
+                            :list-services
+                            :list-clusters
+                            :list-subclusters
+                            :list-ce
+                            :list-software
+                            :list-se
+                            :list-sa
+                            :list-vo})
 
+
+(defn split-attributes
+  "
+  Splits human-defind attributes into query-readable form
+  "
+  [attributes-string]
+  (filter #(not= % (keyword "")) (map #(keyword %) (split attributes-string #",|;"))))
+
+;(defn split-attributes
+;  "
+;  Splits human-defind attributes into query-readable form
+;  "
+;  [attributes-string]
+;  (map
+;    #(keyword %)
+;    (if-let [splitted-attributes (split attributes-string #",;")]
+;      splitted-attributes
+;      [])))
 
 
 (defn dispatch-cli-queries
@@ -103,16 +111,33 @@
   "
   [opts]
   (let [connection-data {:host (:host opts) :port (:port opts) :dn (:dn opts) :password (:password opts)}]
-    (loop [available-options (keys query-cli-args) acc {}]
-      (if (= (count available-options) 0)
-        acc
+    (loop [available-options list-query-cli-args]
+      (when (not= (count available-options) 0)
         (if ((first available-options) opts)
-          (recur (rest available-options) (assoc acc (first available-options) (query-server connection-data ((first available-options) query-cli-args) (first available-options))))
-          (recur (rest available-options) acc))))))
+          (let [query-result (query-server connection-data gluequeries/glue-object-list-query (first available-options))]
+            (println)
+            (println ((first available-options) query-descriptions))
+            (print-list
+              (if (= (:take-top opts) "0")
+                query-result
+                (take (Integer. (re-find #"\d+" (:take-top opts))) query-result)))
+            (println)))
+        (recur (rest available-options))))
+    (if (:get-by-id opts)
+      (let [query-result (apply query-server (cons connection-data (cons gluequeries/glue-object-query (cons (:get-by-id opts) (split-attributes (:attributes opts))))))]
+        (println)
+        (println (str "Selected attributes for objest with ID: " (:get-by-id opts)))
+        (if (= query-result nil)
+          (println "Database doesn't contain the given ID.")
+          (print-list (map #(str (name %) ": " (% query-result)) (keys query-result))))
+        (println)))
+  ))
 
 
 (defn -main
-  "The application's main function"
+  "
+  The application's main function
+  "
   ;
   ; TODO: Add new args for objects and IDs
   ;
@@ -133,6 +158,9 @@
           ["-lse" "--list-se" "List GLUE Storage Elements" :flag true :default false]
           ["-lsa" "--list-sa" "List GLUE Storage Areas" :flag true :default false]
           ["-lvo" "--list-vo" "List GLUE Virtual Organizations" :flag true :default false]
+          ["-t" "--take-top" "Show only selected number of list query results (0 - take all)" :default "0"]
+          ["-g" "--get-by-id" "Get item by id"]
+          ["-a" "--attributes" "Add atributes to be listetd while querying by ID (i. e. \"GlueSiteEmailContact\")" :default ""]
           )]
 
     ;(println "Ustawione argumenty uruchomienia:")
@@ -150,7 +178,7 @@
     ;;
     (if
       (and (:dn opts) (:password opts))
-      (print-glue-results (dispatch-cli-queries opts))
+      (dispatch-cli-queries opts)
       (do
         (println "\nError: Missing password or DN\n")
         (println banner))
