@@ -24,7 +24,7 @@
 
 (defn setup
   "
-  Fixture setUp, start LDAP server instance and bind to server atom
+  Fixture setup, start LDAP server instance and bind to server atom
   "
   []
   (reset! server (InMemoryDirectoryServer. (ldap-config "Mds-Vo-name=local,o=grid"
@@ -58,14 +58,22 @@
 ;
 (use-fixtures :once test-wrapper)
 
-
+(def list-query-cli-args #{ :list-sites
+                            :list-services
+                            :list-clusters
+                            :list-subclusters
+                            :list-ce
+                            :list-software
+                            :list-se
+                            :list-sa
+                            :list-vo})
 
 (deftest test-list-sites
-  (testing "List Glue Sites - The test file contains 293"
-    (is (= 24 (count (gluequeries/glue-object-list-query (.getConnection @server) :list-sites ))))))
+  (testing "List Glue Sites - The test file contains 334"
+    (is (= 334 (count (gluequeries/glue-object-list-query (.getConnection @server) :list-sites))))))
 
 (deftest test-list-se
-  (testing "List Glue SE - The test file contains 282"
-    (is (= 0 (count (gluequeries/glue-object-list-query (.getConnection @server) :list-se ))))))
+  (testing "List Glue SE - The test file contains 437"
+    (is (= 437 (count (gluequeries/glue-object-list-query (.getConnection @server) :list-services))))))
 
 ; TODO : add tests for other queries
