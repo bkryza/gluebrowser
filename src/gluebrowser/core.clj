@@ -102,7 +102,7 @@
   Splits human-defind attributes into query-readable form
   "
   [attributes-string]
-  (filter #(not= % (keyword "")) (split attributes-string #",|;")))
+  (filter #(not= % "") (split attributes-string #",|;")))
 
 
 (defn dispatch-cli-queries
@@ -140,8 +140,8 @@
       (let [query-result (apply query-server (cons connection-data (cons gluequeries/glue-object-elements (cons (:find-by-foreign-key opts) (split-attributes (:specific-type opts))))))]
         (println)
         (println (str "Objects related to object with ID: " (:get-by-id opts)))
-        (if (nil? query-result)
-          (println "Database doesn't contain the given ID or no items are related to this object.")
+        (if (empty query-result)
+          (println "Database doesn't contain the given ID or no items of selected type(s) are related to this object.")
           (print-single-column-list query-result))
         (println)))
   ))

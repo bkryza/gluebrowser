@@ -57,8 +57,10 @@
         (if (zero? (count attrs))
           (ldap/get ldap-server id)
           (ldap/get ldap-server id attrs))
-        (catch Exception e {}))]
-      (map #(list (name %) (% query-result)) (keys query-result)))))
+        (catch Exception e nil))]
+      (if (nil? query-result)
+        nil
+        (map #(list (name %) (% query-result)) (keys query-result))))))
 
 
 (defn glue-object-elements
