@@ -1,9 +1,9 @@
 (ns gluebrowser.core
-  (:use [clojure.tools.cli :only (cli)])
-  (:use [clojure.string :only (join split)])
+  (:use [clojure.tools.cli :only [cli]])
+  (:use [clojure.string :only [split]])
+  (:use [clojure.tools.logging :only [info error]])
   (:require [clj-ldap.client :as ldap])
   (:require [gluebrowser.gluequeries :as gluequeries])
-  (:use [clojure.tools.logging :only (info error)] )
   (:gen-class :main true))
 
 (defn project-description
@@ -24,15 +24,14 @@
   "
   [connection-data query-fn & args]
   (try
-    (let [url (join ":" [(:host connection-data) (:port connection-data)])
-          ldap-server (ldap/connect {:host     url
+    (let [ldap-server (ldap/connect {:host     (str (:host connection-data) ":" (:port connection-data))
                                      :bind-dn  (:dn connection-data)
                                      :password (:password connection-data)})]
       ;
       ; Execute the query on the ldap-server
       ;
       (info "Querying LDAP")
-      (apply query-fn (cons ldap-server args)))
+      (apply query-fn ldap-server args))
     (catch Exception e
       (println "Couldn't connect to LDAP server: " (.getMessage e)))))
 
@@ -56,12 +55,13 @@
   Prints a list of results. Prints one result item in a line
   "
   [items]
-  (loop [unprocessed-items-list items number 1]
-    (when (not-empty unprocessed-items-list)
-      (printf (str " %" (inc (Math/log10 (count items))) "d. %s%n") number (first unprocessed-items-list))
-      (recur
-        (rest unprocessed-items-list)
-        (inc number)))))
+  (let [printf-string (str " %" (inc (Math/log10 (count items))) "d. %s%n")]
+    (loop [unprocessed-items-list items number 1]
+      (when (not-empty unprocessed-items-list)
+        (printf printf-string number (first unprocessed-items-list))
+        (recur
+          (rest unprocessed-items-list)
+          (inc number))))))
 
 
 (defn print-double-column-list
@@ -70,31 +70,14 @@
   "
   [items]
   (let [first-column-width (inc (Math/log10 (count items)))
-        second-column-width (reduce max 0 (map #(count (first %)) items))]
+        second-column-width (apply max (map (comp count first) items))
+        printf-string (str " %" first-column-width "d. %-" second-column-width "s %s%n")]
     (loop [unprocessed-items-list items number 1]
-      (when (not-empty unprocessed-items-list)
-        (printf
-          (str " %" first-column-width "d. %-" second-column-width "s %s%n")
-          number
-          (first (first unprocessed-items-list))
-          (second (first unprocessed-items-list)))
+      (when-first [first-item unprocessed-items-list]
+        (apply printf printf-string number first-item)
         (recur
           (rest unprocessed-items-list)
           (inc number))))))
-
-
-;
-; Set of all command line attributes which handle list queries
-;
-(def list-query-cli-args #{  :list-sites
-                             :list-services
-                             :list-clusters
-                             :list-subclusters
-                             :list-ce
-                             :list-software
-                             :list-se
-                             :list-sa
-                             :list-vo})
 
 
 (defn split-attributes
@@ -102,7 +85,7 @@
   Splits human-defind attributes into query-readable form
   "
   [attributes-string]
-  (filter #(not= % "") (split attributes-string #",|;")))
+  (filter not-empty (split attributes-string #",|;")))
 
 
 (defn dispatch-cli-queries
@@ -112,39 +95,45 @@
   [opts]
   (let [connection-data {:host (:host opts) :port (:port opts) :dn (:dn opts) :password (:password opts)}]
     ;handle list queries
-    (doall
-      (map
-        #(if (% opts)
-          (let [query-result (query-server connection-data gluequeries/glue-object-list-query %)]
-            (println)
-            (println (% query-descriptions))
-            (print-double-column-list
-              (if (= (:take-top opts) "0")
-                query-result
-                (take (Integer. (re-find #"\d+" (:take-top opts))) query-result)))
-            (println)))
-        list-query-cli-args))
+    (doseq [arg (keys query-descriptions)]
+      (when (arg opts)
+        (let [query-result (query-server connection-data gluequeries/glue-object-list-query arg)]
+          (println)
+          (println (arg query-descriptions))
+          (print-double-column-list
+            (if (= "0" (:take-top opts))
+              query-result
+              (take (Integer. (re-find #"\d+" (:take-top opts))) query-result)))
+          (println))))
     ;handle id query
-    (if (:get-by-id opts)
-      (let
-        [query-result
-         (apply query-server (cons connection-data (cons gluequeries/glue-object-query (cons (:get-by-id opts) (map #(keyword %) (split-attributes (:attributes opts)))))))]
+    (when (:get-by-id opts)
+      (let [query-result (apply
+                           query-server
+                           connection-data
+                           gluequeries/glue-object-query
+                           (:get-by-id opts)
+                           (->> opts :attributes split-attributes (map keyword)))]
         (println)
-        (println (str "Selected attributes for objest with ID: " (:get-by-id opts)))
-        (if (nil? query-result)
-          (println "Database doesn't contain the given ID.")
-          (print-double-column-list query-result))
+        (println "Selected attributes for objest with ID:" (:get-by-id opts))
+        (if query-result
+          (print-double-column-list query-result)
+          (println "Database doesn't contain the given ID."))
         (println)))
     ;handle foreign key queries
-    (if (:find-by-foreign-key opts)
-      (let [query-result (apply query-server (cons connection-data (cons gluequeries/glue-object-elements (cons (:find-by-foreign-key opts) (split-attributes (:specific-type opts))))))]
+    (when (:find-by-foreign-key opts)
+      (let [query-result (apply
+                           query-server
+                           connection-data
+                           gluequeries/glue-object-elements
+                           (:find-by-foreign-key opts)
+                           (split-attributes (:specific-type opts)))]
         (println)
-        (println (str "Objects related to object with ID: " (:get-by-id opts)))
-        (if (empty query-result)
-          (println "Database doesn't contain the given ID or no items of selected type(s) are related to this object.")
-          (print-single-column-list query-result))
+        (println "Objects related to object with ID:" (:get-by-id opts))
+        (if (not-empty query-result)
+          (print-single-column-list query-result)
+          (println "Database doesn't contain the given ID or no items of selected type(s) are related to this object."))
         (println)))
-  ))
+    ))
 
 
 (defn -main
@@ -175,7 +164,7 @@
       ["-g" "--get-by-id" "Get item by id"]
       ["-a" "--attributes" "Specify atributes to be listetd while querying by ID (i. e. \"GlueSiteEmailContact\")" :default ""]
       ;foreign key query
-      ["-f" "--find-by-foreign-key" "Find elements related to diven dn by foreign key"]
+      ["-f" "--find-by-foreign-key" "Find elements related to given dn by foreign key"]
       ["-c" "--specific-type" "Limits results of related object query to specific type" :default ""]
       )]
 
@@ -190,10 +179,8 @@
     ;;
     ;; Check if the user passed dn and password options
     ;;
-    (if
-      (and (:dn opts) (:password opts))
+    (if (and (:dn opts) (:password opts))
       (dispatch-cli-queries opts)
       (do
         (println "\nError: Missing password or DN\n")
-        (println banner))
-      )))
+        (println banner)))))

@@ -2,8 +2,7 @@
   (:require [clojure.test :refer :all]
             [gluebrowser.core :refer :all]
             [gluebrowser.gluequeries :as gluequeries])
-  (:import (com.unboundid.ldap.listener  InMemoryDirectoryServerConfig
-                                         InMemoryDirectoryServer)))
+  (:import [com.unboundid.ldap.listener InMemoryDirectoryServerConfig InMemoryDirectoryServer]))
 
 
 ;
@@ -30,7 +29,9 @@
   (reset! server (InMemoryDirectoryServer. (ldap-config "Mds-Vo-name=local,o=grid"
                                                         "cn=admin, Mds-Vo-name=local, o=grid"
                                                         "alamakota")))
-  (doto @server  (.importFromLDIF false "./resources/glue-test.ldif") (.startListening)))
+  (doto @server
+    (.importFromLDIF false "./resources/glue-test.ldif")
+    (.startListening)))
 
 
 (defn teardown
@@ -54,26 +55,27 @@
 
 
 ;
-; Use the setup wrappers once for the entire namespace
+; Use the wrapper once for the entire namespace
 ;
 (use-fixtures :once test-wrapper)
 
-(def list-query-cli-args-for-test { :list-sites         '("GLUE Sites" 334)
-                                    :list-services      '("GLUE Services" 2227)
-                                    :list-clusters      '("GLUE Clusters" 510)
-                                    :list-subclusters   '("GLUE Subclusters" 108)
-                                    :list-ce            '("GLUE Computing Elements" 3170)
-                                    :list-software      '("GLUE Software" 0)
-                                    :list-se            '("GLUE Storage Elements" 437)
-                                    :list-sa            '("GLUE Storage Areas" 1219)
-                                    :list-vo            '("GLUE Virtual Organizations" 45)})
+
+(def list-query-cli-args-for-test [[:list-sites         "GLUE Sites"                  334]
+                                   [:list-services      "GLUE Services"               2227]
+                                   [:list-clusters      "GLUE Clusters"               510]
+                                   [:list-subclusters   "GLUE Subclusters"            108]
+                                   [:list-ce            "GLUE Computing Elements"     3170]
+                                   [:list-software      "GLUE Software"               0]
+                                   [:list-se            "GLUE Storage Elements"       437]
+                                   [:list-sa            "GLUE Storage Areas"          1219]
+                                   [:list-vo            "GLUE Virtual Organizations"  45]])
+
 
 (deftest test-list-queries
-  (doall
-    (map
-      #(testing (str "List " (first (% list-query-cli-args-for-test)) " - The test file contains " (second (% list-query-cli-args-for-test)))
-        (is (= (second (% list-query-cli-args-for-test)) (count (gluequeries/glue-object-list-query (.getConnection @server) %)))))
-      (keys list-query-cli-args-for-test))))
+  (doseq [[query-opt query-string query-result] list-query-cli-args-for-test]
+    (testing (str "List " query-string " - The test file contains " query-result)
+      (is (= query-result (count (gluequeries/glue-object-list-query (.getConnection @server) query-opt)))))))
+
 
 (deftest test-query-by-dn
   (testing "List Cyfronet Vo record"
@@ -82,6 +84,7 @@
              (list "dn" "Mds-Vo-name=CYFRONET-LCG2,Mds-Vo-name=local,o=grid")
              (list "Mds-Vo-name" "CYFRONET-LCG2"))
           (gluequeries/glue-object-query (.getConnection @server) "Mds-Vo-name=CYFRONET-LCG2,Mds-Vo-name=local,o=grid" :objectClass :dn :Mds-Vo-name)))))
+
 
 (deftest test-query-by-foreign-key
   (testing "List Cyfronet Site relatives"

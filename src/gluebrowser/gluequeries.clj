@@ -1,7 +1,7 @@
 (ns gluebrowser.gluequeries
-  (:use [clojure.string :only (join)])
+  (:use [clojure.string :only [join]])
   (:require [clj-ldap.client :as ldap])
-  (:use [clojure.tools.logging :only (info error)]))
+  (:use [clojure.tools.logging :only [info error]]))
 
 
 (def TODO nil)
@@ -20,7 +20,7 @@
                           :list-clusters      '("GlueCluster"     :GlueClusterUniqueID)
                           :list-subclusters   '("GlueSubcluster"  :GlueSubClusterUniqueID)
                           :list-ce            '("GlueCE"          :GlueCEUniqueID)
-                          :list-software      '("GlueSoftware"    :GlueSoftware) ;wrong TODO: find correct names
+                          :list-software      '("GlueSoftware"    :GlueSoftware) ;TODO: wrong, find correct names
                           :list-se            '("GlueSE"          :GlueSEUniqueID)
                           :list-sa            '("GlueSA"          :GlueSALocalID)
                           :list-vo            '("GlueVOInfo"      :GlueVOInfoLocalID)
@@ -36,11 +36,12 @@
   (\"ARNES\" \"TRIUMF_LCG2\" ...)
   "
   [ldap-server query]
-  (let [ldap-query (apply str "(objectClass=" (first (query glue-list-queries)) ")")
-        ldap-attribute (second (query glue-list-queries))]
+  (let [[object-class ldap-attribute] (query glue-list-queries)
+        ldap-query (str "(objectClass=" object-class ")")]
     (info "Executing list query: " ldap-query " for attribute " ldap-attribute)
-    (let [result (ldap/search ldap-server ldap-root-dn {:filter ldap-query :attributes [ldap-attribute]})]
-      (map #(list (ldap-attribute %) (:dn %)) result))))
+    (for [result (ldap/search ldap-server ldap-root-dn {:filter ldap-query
+                                                        :attributes [ldap-attribute]})]
+      [(ldap-attribute result) (:dn result)])))
 ;{:filter "(objectClass=GlueSite)" :attributes [:GlueSiteUniqueID]}
 
 (defn glue-object-query
@@ -50,17 +51,14 @@
   "
   [ldap-server id & attrs]
   (do
-    (info (str "Executing object ID query for id: " id (if (not= (count attrs) 0) (str " with attributes: " (join ", " attrs)) "") "."))
-    (let
-      [query-result
-      (try
-        (if (zero? (count attrs))
-          (ldap/get ldap-server id)
-          (ldap/get ldap-server id attrs))
-        (catch Exception e nil))]
-      (if (nil? query-result)
-        nil
-        (map #(list (name %) (% query-result)) (keys query-result))))))
+    (info (str "Executing object ID query for id: " id (if (not-empty attrs) (str " with attributes: " (join ", " attrs)) "") "."))
+    (when-let [query-result (try
+                              (if (empty? attrs)
+                                (ldap/get ldap-server id)
+                                (ldap/get ldap-server id attrs))
+                              (catch Exception e nil))]
+      (for [key (keys query-result)]
+        [(name key) (key query-result)]))))
 
 
 (defn glue-object-elements
@@ -76,18 +74,12 @@
   [ldap-server id & types]
   (do
     (info (str "Executing foreign key query for id: " id (if (not= (count types) 0) (str " limited to type(s): " (join ", " types)) "") "."))
-    (let
-      [query-result
-      (ldap/search
-        ldap-server
-        ldap-root-dn
-        {:filter
-         (if (zero? (count types))
-           (str "(GlueForeignKey=" id ")")
-           (if (= 1 (count types))
-             (str "(&(objectClass=" (first types) ")(GlueForeignKey=" id "))")
-             (str "(&(|(objectClass=" (join ")(objectClass=" types) "))(GlueForeignKey=" id "))")))
-         :attributes
-         [:dn]})]
-      (map #(:dn %) query-result)
-      )))
+    (map :dn (ldap/search
+               ldap-server
+               ldap-root-dn
+               {:filter (if (empty? types)
+                          (str "(GlueForeignKey=" id ")")
+                          (if (= 1 (count types))
+                            (str "(&(objectClass=" (first types) ")(GlueForeignKey=" id "))")
+                            (str "(&(|(objectClass=" (join ")(objectClass=" types) "))(GlueForeignKey=" id "))")))
+                :attributes [:dn]}))))
